@@ -1,5 +1,5 @@
 import math
-from arrayUtils import contains, ones
+from src.arrayUtils import contains, ones
 
 
 def integrate_trapezoid(y: list, x: list) -> float:
