@@ -90,6 +90,11 @@ def linear_space(min: float, max: float, samples: int) -> list:
     create a list of evenly spaced points
     """
 
+    if samples <= 0:
+        return []
+    elif samples == 1:
+        return [min]
+
     arr = []
     sum = min
     samples -= 1
